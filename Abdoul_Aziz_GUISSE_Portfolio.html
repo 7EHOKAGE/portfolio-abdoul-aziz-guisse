@@ -54,7 +54,7 @@
     --radius: 14px;
   }
   *{box-sizing:border-box;}
-  html{scroll-behavior:smooth; overflow-x:hidden;}
+  html{scroll-behavior:smooth;}
   @media (prefers-reduced-motion: reduce){
     html{scroll-behavior:auto;}
     *{animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important;}
@@ -67,8 +67,6 @@
     font-weight:400;
     line-height:1.55;
     -webkit-font-smoothing:antialiased;
-    overflow-x:hidden;
-    width:100%;
   }
   h1,h2,h3{
     font-family:'Anton', sans-serif;
@@ -573,6 +571,7 @@
     .grid-3{grid-template-columns:1fr;}
     .project-grid{grid-template-columns:1fr;}
     .nav-top{flex-wrap:wrap; gap:8px;}
+    #hero{ overflow:hidden; }
     #hero::before{ width:260px; height:260px; top:-40px; right:-40px; }
   }
 
