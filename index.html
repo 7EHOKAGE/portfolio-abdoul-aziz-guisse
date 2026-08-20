@@ -573,6 +573,27 @@
     .nav-top{flex-wrap:wrap; gap:8px;}
   }
 
+  @media (max-width:560px){
+    .nav-top{ justify-content:center; }
+    .plate{ display:none; }
+    .brand{ font-size:13px; }
+    .lang-switch{ padding:2px; }
+    .lang-btn{ padding:4px 9px; font-size:10px; }
+    .route-track{ height:58px; }
+    .route-line{ top:34px; min-width:480px; }
+    .stops{ min-width:480px; gap:2px; }
+    .stop{ font-size:9.5px; padding:0 2px; }
+    .stop .dot{ margin-top:26px; width:10px; height:10px; }
+    .route-track::after{
+      content:"";
+      position:absolute; top:0; right:0; bottom:0; width:26px;
+      background:linear-gradient(90deg, transparent, var(--bg-soft));
+      pointer-events:none;
+    }
+    .board-track{ font-size:11px; }
+    .destination-board{ text-align:left; }
+  }
+
   .reveal{ transition:opacity .6s cubic-bezier(.16,1,.3,1), transform .6s cubic-bezier(.16,1,.3,1); }
   .panel.reveal{ opacity:0; transform:translateY(24px); }
   .panel.reveal.in{ opacity:1; transform:translateY(0); }
